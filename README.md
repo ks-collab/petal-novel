@@ -1,3 +1,17 @@
+# Michael's notes
+
+10 Jan - I created this repo to try out Novel. It could be the basis for the AI Create rework. I want to have a rich text editor, so it feels like more like a proper text editor that users can write long-form documents in. I found TipTap, which seems to be a good and extensible foundation for rich text editing. But it doesn't come with a UI. I was looking for a Notion-like interface, since I like their AI writing UX. And also WriteSonic's interface is Notion-like. So I then found Novel, which is open-source and provides a UI very similar to what I want. They also already have AI-powered autocompletions. Therefore, I decided to investigate this repo by trying to modify it to see if it can do what I need it to do.
+
+There are several reasons why I took this approach:
+- TipTap seems like a good foundation for rich text editing, so I'm pretty sure I want to use that
+- Novel provides a UI that is close to the Notion-like UI that I want: text is in blocks; user can execute commands from an empty block, slash command, or selecting text ("bubble menu").
+- Novel also has an AI integration that I can learn from
+
+My goal is to not touch the UI for now, only modify/add the AI features I need. I'm hoping the UI will be good enough for our purposes.
+
+
+# stuff from original Novel repo
+
 <a href="https://novel.sh">
   <img alt="Novel is a Notion-style WYSIWYG editor with AI-powered autocompletions." src="https://novel.sh/opengraph-image.png">
   <h1 align="center">Novel</h1>
