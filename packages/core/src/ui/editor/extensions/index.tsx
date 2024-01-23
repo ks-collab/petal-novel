@@ -1,7 +1,7 @@
 import StarterKit from "@tiptap/starter-kit";
 import HorizontalRule from "@tiptap/extension-horizontal-rule";
 import TiptapLink from "@tiptap/extension-link";
-import TiptapImage from "@tiptap/extension-image";
+// import TiptapImage from "@tiptap/extension-image";
 import Placeholder from "@tiptap/extension-placeholder";
 import TiptapUnderline from "@tiptap/extension-underline";
 import TextStyle from "@tiptap/extension-text-style";
@@ -12,8 +12,8 @@ import { Markdown } from "tiptap-markdown";
 import Highlight from "@tiptap/extension-highlight";
 import SlashCommand from "./slash-command";
 import { InputRule } from "@tiptap/core";
-import UploadImagesPlugin from "@/ui/editor/plugins/upload-images";
-import UpdatedImage from "./updated-image";
+// import UploadImagesPlugin from "@/ui/editor/plugins/upload-images";
+// import UpdatedImage from "./updated-image";
 import CustomKeymap from "./custom-keymap";
 import DragAndDrop from "./drag-and-drop";
 
@@ -92,21 +92,21 @@ export const defaultExtensions = [
         "novel-text-stone-400 novel-underline novel-underline-offset-[3px] hover:novel-text-stone-600 novel-transition-colors novel-cursor-pointer",
     },
   }),
-  TiptapImage.extend({
-    addProseMirrorPlugins() {
-      return [UploadImagesPlugin()];
-    },
-  }).configure({
-    allowBase64: true,
-    HTMLAttributes: {
-      class: "novel-rounded-lg novel-border novel-border-stone-200",
-    },
-  }),
-  UpdatedImage.configure({
-    HTMLAttributes: {
-      class: "novel-rounded-lg novel-border novel-border-stone-200",
-    },
-  }),
+  // TiptapImage.extend({
+  //   addProseMirrorPlugins() {
+  //     return [UploadImagesPlugin()];
+  //   },
+  // }).configure({
+  //   allowBase64: true,
+  //   HTMLAttributes: {
+  //     class: "novel-rounded-lg novel-border novel-border-stone-200",
+  //   },
+  // }),
+  // UpdatedImage.configure({
+  //   HTMLAttributes: {
+  //     class: "novel-rounded-lg novel-border novel-border-stone-200",
+  //   },
+  // }),
   Placeholder.configure({
     placeholder: ({ node }) => {
       if (node.type.name === "heading") {
